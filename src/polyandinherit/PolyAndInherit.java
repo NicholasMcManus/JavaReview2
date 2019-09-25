@@ -9,13 +9,15 @@
 
 package polyandinherit;
 
+import java.time.Clock;
+
 public class PolyAndInherit {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println(Clock.systemUTC().millis());
     }
 
 }
