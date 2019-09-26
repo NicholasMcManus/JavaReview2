@@ -10,8 +10,7 @@ package polyandinherit;
 
 public class MyDate {
 
-    private int year = 1970, month = 0;
-    long day = 0;
+    private int year = 1970, month = 0, day = 0;
 
     public MyDate() {
         this(System.currentTimeMillis());
@@ -29,7 +28,7 @@ public class MyDate {
         double seconds = Math.floor(milliseconds / 1000.0);
         double minutes = Math.floor(seconds / 60.0);
         double hours = Math.floor(minutes / 60.0);
-        day = (long) Math.ceil(hours / 24.0);
+        day = (int) Math.ceil(hours / 24.0);
 
         
         //Calculate the current 
@@ -51,6 +50,18 @@ public class MyDate {
                 year += 1;
             }
         }
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getDay() {
+        return day;
     }
     
     @Override
