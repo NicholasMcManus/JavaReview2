@@ -26,6 +26,24 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    
+    
     @Override
     public String toString() {
         return "Person: " + name; //To change body of generated methods, choose Tools | Templates.
