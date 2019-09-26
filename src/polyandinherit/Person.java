@@ -25,5 +25,12 @@ public class Person {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Person: " + name; //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
 }
 
