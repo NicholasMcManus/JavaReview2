@@ -2,8 +2,8 @@
  * file name: MyDate.java
  * programmer name: Nick McManus
  * date created: 09-25-2019
- * date of last revision: 09-25-2019
- * details of last revision: 
+ * date of last revision: 09-30-2019
+ * details of last revision: Add setDate(Long) method
  * short description: Create a class to describe a date object
  */
 package polyandinherit;
@@ -17,9 +17,14 @@ public class MyDate {
     }
 
     public MyDate(long mSeconds) {
-        longToDate(mSeconds);
+        setDate(mSeconds);
     }
 
+    public void setDate(long milliseconds)
+    {
+        this.longToDate(milliseconds);
+    }
+    
     private void longToDate(long milliseconds) {
         
         //Declare variables

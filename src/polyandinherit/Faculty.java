@@ -2,8 +2,8 @@
  * file name: Faculty.java
  * programmer name: Nick McManus
  * date created: 09-26-2019
- * date of last revision: 9/26/2019
- * details of last revision: Create and add comments
+ * date of last revision: 9/30/2019
+ * details of last revision: Add setters
  * short description: Describe a faculty
  */
 
@@ -36,6 +36,16 @@ public class Faculty extends Employee{
         return rank;
     }
 
+    public void setOfficeHours(double officeHours)
+    {
+        this.officeHours = officeHours;
+    }
+    
+    public void setRank(String rank)
+    {
+        this.rank = rank;
+    }
+    
     //Override the toString method
     @Override
     public String toString() {
