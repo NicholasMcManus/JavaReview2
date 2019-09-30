@@ -21,7 +21,7 @@ public class Staff extends Employee{
     }
 
     //Full Argument Construtor
-    public Staff(String title, int office, double salary, MyDate dateHired, String name, String address, String email, int phoneNumber) {
+    public Staff(String title, int office, double salary, MyDate dateHired, String name, String address, String email, long phoneNumber) {
         super(office, salary, dateHired, name, address, email, phoneNumber);
         this.title = title;
     }

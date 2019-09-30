@@ -24,7 +24,7 @@ public class Student extends Person{
     }
 
     //Full Argument
-    public Student(String classStatus, String name, String address, String email, int phoneNumber) {
+    public Student(String classStatus, String name, String address, String email, long phoneNumber) {
         super(name, address, email, phoneNumber);
         this.CLASS_STATUS = classStatus;
     }

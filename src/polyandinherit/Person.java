@@ -12,7 +12,7 @@ package polyandinherit;
 public class Person {
     //Class variables
     private String name, address, email;
-    private int phoneNumber;
+    private long phoneNumber;
     
     //Constructors
     //no-argument
@@ -22,7 +22,7 @@ public class Person {
     }
     
     //Full argument
-    public Person(String name, String address, String email, int phoneNumber)
+    public Person(String name, String address, String email, long phoneNumber)
     {
         this.name = name;
         this.address = address;
@@ -43,7 +43,7 @@ public class Person {
         return email;
     }
 
-    public int getPhoneNumber() {
+    public long getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -51,8 +51,6 @@ public class Person {
     @Override
     public String toString() {
         return "Person: " + name; //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
+    }    
 }
 

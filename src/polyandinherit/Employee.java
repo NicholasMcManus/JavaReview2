@@ -26,7 +26,7 @@ public class Employee extends Person{
     }
 
     //Full argument constructor
-    public Employee(int office, double salary, MyDate dateHired, String name, String address, String email, int phoneNumber) {
+    public Employee(int office, double salary, MyDate dateHired, String name, String address, String email, long phoneNumber) {
         super(name, address, email, phoneNumber);
         this.office = office;
         this.salary = salary;

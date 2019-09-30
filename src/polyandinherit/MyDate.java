@@ -10,21 +10,29 @@ package polyandinherit;
 
 public class MyDate {
 
+    //Initialize class variables
     private int year = 1970, month = 0, day = 0;
-
+    public static final String[] MONTHS_WRITTEN = {"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+    
+    //Constructors
+    //No-Arg Constructor
     public MyDate() {
         this(System.currentTimeMillis());
     }
 
+    //Full arg constructor
     public MyDate(long mSeconds) {
         setDate(mSeconds);
     }
 
+    //Setters
     public void setDate(long milliseconds)
     {
         this.longToDate(milliseconds);
     }
     
+    //Useful internal method
     private void longToDate(long milliseconds) {
         
         //Declare variables
@@ -57,6 +65,7 @@ public class MyDate {
         }
     }
 
+    //Getters
     public int getYear() {
         return year;
     }
@@ -69,12 +78,10 @@ public class MyDate {
         return day;
     }
     
+    //Override toString
     @Override
     public String toString()
-    {
-        String[] monthsWritten = {"Jan", "Feb", "Mar", "Apr", "May", "Jun",
-            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
-        
-        return monthsWritten[month] + " " + day + ", " + year;
+    {      
+        return MONTHS_WRITTEN[month] + " " + day + ", " + year;
     }
 }

@@ -21,7 +21,7 @@ public class Faculty extends Employee{
         this.rank = "Janitor";
     }
 
-    public Faculty(double officeHours, String rank, int office, double salary, MyDate dateHired, String name, String address, String email, int phoneNumber) {
+    public Faculty(double officeHours, String rank, int office, double salary, MyDate dateHired, String name, String address, String email, long phoneNumber) {
         super(office, salary, dateHired, name, address, email, phoneNumber);
         this.officeHours = officeHours;
         this.rank = rank;
