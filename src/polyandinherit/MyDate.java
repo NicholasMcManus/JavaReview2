@@ -23,7 +23,15 @@ public class MyDate {
 
     //Full arg constructor
     public MyDate(long mSeconds) {
-        setDate(mSeconds);
+        longToDate(mSeconds);
+    }
+    
+    //Add constructor using day, month, and year
+    public MyDate(int day, int month, int year)
+    {
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
     //Setters
@@ -76,6 +84,19 @@ public class MyDate {
 
     public int getDay() {
         return day;
+    }
+
+    //Setters
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
     }
     
     //Override toString
