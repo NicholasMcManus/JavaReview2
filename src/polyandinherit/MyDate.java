@@ -106,3 +106,26 @@ public class MyDate {
         return MONTHS_WRITTEN[month] + " " + day + ", " + year;
     }
 }
+
+/*
+run:
+Test 1: MyDate Testing
+Oct 1, 2019
+Sep 7, 3058
+
+Test 2: Testing People and Children!
+Creating 5 people via No Arg constructors
+Creating 5 people via Full Argument Constructors
+
+Person: John Doe
+Student: John Doe
+Employee: John Doe
+Faculty: John Doe
+Staff: John Doe
+Person: Billy Smith
+Student: Cynthia Youngman
+Employee: Lora Vu
+Faculty: Malcom Howard
+Staff: Shaun Cotton
+BUILD SUCCESSFUL (total time: 0 seconds)
+*/
